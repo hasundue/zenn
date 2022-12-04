@@ -38,7 +38,7 @@ $ udd import_map.json
 
 ただ、GitHub には [Dependabot](https://docs.github.com/ja/code-security/dependabot) という機能があり、Node などのプロジェクトではそもそもこういった作業を手動で行なっていない方も多いと思います。しかし、Dependabot は今のところ Deno に対応しておらず、 [近い将来に対応してくれそうな雰囲気もありません](https://github.com/dependabot/dependabot-core/issues/2417)。したがって、依存関係の更新を自動化するには一手間必要です。
 
-幸い、udd は [GitHub Action のサンプルファイル](https://github.com/hayd/deno-udd/blob/master/.github/workflows/udd.yml) を用意してくれているので、これを弄って使えばある程度 Dependabot に近いことが出来ますが、Dependabot のホスピタリティーには劣ってしまいます。
+幸い、udd は [GitHub Action のサンプルファイル](https://github.com/hayd/deno-udd/blob/master/.github/workflows/udd.yml) を用意してくれているので、これを弄って使えばある程度 Dependabot に近いことが出来ますが、手軽さや機能の面で劣ってしまいます。
 
 Dependabot のコア部分は[オープンソース](https://github.com/dependabot/dependabot-core)だけど、外部からのコントリビューションを想定している感じではないし、Deno 対応のプルリクを頑張って作るのも違う気がする…
 
@@ -50,7 +50,7 @@ Dependabot のコア部分は[オープンソース](https://github.com/dependab
 
 https://github.com/hasundue/denopendabot
 
-まだ開発途中ですが、筆者は大きな不満は無く実用できています。 Denopendabot は次の4つの形式でリリースされていて、好きな方法で使うことができます:
+コア部分では udd を使っていて、主に GitHub とのインタラクションの部分を実装しています。まだ開発途中ですが、筆者は大きな不満無く実用できています。 Denopendabot は次の4つの形式でリリースされていて、好きな方法で使うことができます:
 
 - GitHub App
 - GitHub Action
