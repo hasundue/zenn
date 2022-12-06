@@ -7,7 +7,7 @@ published: true
 ---
 
 :::message
-この記事は [Deno Advent Calendar 2022](https://qiita.com/advent-calendar/2022/deno) 6日目の記事です (遅れてすみません…)
+この記事は [Deno Advent Calendar 2022](https://qiita.com/advent-calendar/2022/deno) 6日目の記事です
 :::
 
 Deno では `deno install` コマンドによってリモートのスクリプトを実行可能な形式でローカルにインストールすることができます：
